@@ -1,5 +1,4 @@
 # what-is-linux
-# Linux
 ### Linux
 Linux isn't directly Unix, just directly inspired by it, and incorporates many of its ideas and interfaces into it. It was created in 1991 by Linus Torvalds who is still an influential figure today and still runs the Linux project. He created Linux because at the time there was no single free, open-source reimplementation of the Unix operating system (the BSD kernel wasn't yet available yet) so he wrote his own kernel which became known as the Linux kernel.
 ### Why Linux
@@ -27,6 +26,19 @@ In the case of `cd`, we're passing data into `cd` to tell it how to run. If we r
 `--help` which is a flag but this commands can take all sorts of flags to customize how they'll act. Like parameters, they're bits of information that change how the command works. Many programs allow you to be lazy and combine flags together. In this case, we can say `ls -la` and that's the same as `ls -a -l` (order doesn't matter either.) This is usually true but it depends on the individual command you're running.
 
 You can pass parameters to flag too. If we type `ls --ignore snap` it will not output snap. This can also be written as `ls --ignore=snap` to make it clearer what that ignore is referring to. We can also say `ls -I snap` for the shorthand. Lastly if we wanted to do an ls on the `/home` directory and not show the ubuntu folder, we could type `ls --ignore ubuntu /home`. In this particular case, the order is important. Immediately after ignore, the part you're trying to ignore is passed, then the last parameters to `ls` as a whole is passed. This is why some people like that equals. `ls --ignore=ubuntu /home` is very clear.
+
+### Signals and the Power of CTRL
+CTRL is a very commonly used key when on the command line. It's used for shortcuts and also to send very specific signals to bash. Let's start with some of the short cuts.
+
+Shortcuts
+CTRL + A – takes you to the beginning of the line
+CTRL + E – takes you to the end of the line
+CTRL + K – "yank" everything after the cursor
+CTRL + U – "yank" everything before the cursor
+CTRL + Y - "paste" (paste in quotes because it doesn't actually go into your system clipboard) everything you yanked
+CTRL + L - clear the screen
+CTRL + R – reverse search through history
+
 # Editors
 ### nano
 nano is an old open source text editor that itself was an evolution from a previous text editor called pico. Pico was the text editor of the command-line email client Pine that people grew to love so much that they used it for everything. Because Pine was licensed in such a way that Debian wouldn't include it with its distro, Chris Allegretta re-implemented under the name TIP (Tip Isn't Pico, computer scientists love recursive acronyms) it eventually was renamed to nano.
