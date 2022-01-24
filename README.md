@@ -31,6 +31,7 @@ You can pass parameters to flag too. If we type `ls --ignore snap` it will not o
 CTRL is a very commonly used key when on the command line. It's used for shortcuts and also to send very specific signals to bash. Let's start with some of the short cuts.
 
 Shortcuts
+```
 CTRL + A – takes you to the beginning of the line
 CTRL + E – takes you to the end of the line
 CTRL + K – "yank" everything after the cursor
@@ -38,6 +39,9 @@ CTRL + U – "yank" everything before the cursor
 CTRL + Y - "paste" (paste in quotes because it doesn't actually go into your system clipboard) everything you yanked
 CTRL + L - clear the screen
 CTRL + R – reverse search through history
+CTRL + C – SIGINT, interrupt what it's doing and stop.
+CTRL + D – SIGQUIT, it'll tell the bash session to end. You also could close the window or just type exit and it'll exit too.
+```
 
 # Editors
 ### nano
